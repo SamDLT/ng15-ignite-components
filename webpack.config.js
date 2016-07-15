@@ -25,6 +25,10 @@ const config = {
             test: /\.html$/,
             exclude: /node_modules/,
             loader: 'raw'
+        }, {
+            test: /\.styl$/,
+            exclude: /node_modules/,
+            loader: 'style!css!stylus'
         }
     ]
     },

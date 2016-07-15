@@ -1,8 +1,10 @@
 import angular from 'angular';
-import ngChart from "./ngChart/ngChart"
+import Home from './home/home';
+import About from './about/about';
 
 let componentModule = angular.module('app.components', [
-    ngChart
-]).name;
+  Home.name,
+  About.name
+]);
 
 export default componentModule;
