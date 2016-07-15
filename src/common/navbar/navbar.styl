@@ -1,18 +1,24 @@
 @import '../common'
 
-.navbar
-  min-height 50px
-  background-color $primaryColor
-  padding 1rem
-  margin-bottom: 20px
-  border: 1px solid transparent
-  .nav-links
-  .logo
-    display inline-block
-  .logo
-    color $lightTextColor
-    margin-right 50%
-  .nav-links
-    span
-      color $lightTextColor
-      font-size 1.6rem
+.site-header
+    position: relative;
+    z-index: 3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    .navbar
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        margin-left: 5px;
+        .nav-item
+            flex: 1 1 auto;
+            padding-left: 10px;
+            font-size: 16px;
+            color: #3c4146;
+            text-decoration: none;
