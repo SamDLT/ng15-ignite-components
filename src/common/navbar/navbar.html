@@ -1,6 +1,12 @@
-<div class="site-header">
+<!-- <div class="site-header">
     <nav class="navbar">
       <a class="nav-item" ui-sref="home">Home</a>
       <a class="nav-item" ui-sref="about">About</a>
     </nav>
-</div>
+</div> -->
+
+<md-nav-bar md-selected-nav-item="currentNavItem">
+  <md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
+  <md-nav-item md-nav-sref="app.page2" name="page2">Page Two</md-nav-item>
+  <md-nav-item md-nav-href="#page3" name="page3">Page Three</md-nav-item>
+</md-nav-bar>

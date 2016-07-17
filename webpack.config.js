@@ -26,11 +26,13 @@ const config = {
             exclude: /node_modules/,
             loader: 'raw'
         }, {
+            test: /\.css$/,
+            loader: 'style!css'
+        }, {
             test: /\.styl$/,
             exclude: /node_modules/,
             loader: 'style!css!stylus'
-        }
-    ]
+        }]
     },
     plugins: [
         HTMLWebpackPluginConfig
