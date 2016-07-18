@@ -14,7 +14,7 @@ const config = {
     output: {
         path: './dist',
         filename: 'bundle.js',
-        publicPath: '/dev-server'
+        publicPath: '/'
     },
     module: {
         loaders: [{
@@ -40,7 +40,7 @@ const config = {
 }
 
 if (env === "dev")
-    open("http://localhost:4000/dev-server")
+    open("http://localhost:4000/)
 
 else if (env === "production") {
     config.plugins.push(
