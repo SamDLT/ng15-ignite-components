@@ -5,7 +5,8 @@ import './navbar.styl';
 let navbarComponent = {
       restrict: 'E',
       template,
-      controller
+      controller,
+      controllerAs: "vm"
 };
 
 export default navbarComponent;

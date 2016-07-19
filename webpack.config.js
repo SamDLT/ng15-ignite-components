@@ -40,7 +40,7 @@ const config = {
 }
 
 if (env === "dev")
-    open("http://localhost:4000/)
+    open("http://localhost:4000/")
 
 else if (env === "production") {
     config.plugins.push(

@@ -7,10 +7,12 @@ class NavbarController {
 
     $onInit() {
 
-        this.$scope.currentNavItem = '/home';
+        var vm = this;
+
+        vm.currentNavItem = '/home';
 
         this.$rootScope.$on('$locationChangeSuccess', (event, current) => {
-            this.$scope.currentNavItem = this.$location.path();
+            vm.currentNavItem = this.$location.path();
         });
     }
 }
